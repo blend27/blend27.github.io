@@ -10,7 +10,7 @@ body {
 .text {
     position: relative;
     margin: 0 0 0 40px;
-    height: 55px;
+    height: 155px;
     white-space: nowrap;
     font-weight: 900;
     font-size: 108px;
@@ -45,8 +45,21 @@ p {
     background: linear-gradient(rgb(230, 0, 0), rgb(123, 0, 0) 50%, rgb(240, 0, 0) 51%, rgb(5, 0, 0));
     -webkit-background-clip: text;
     background-clip: text;
+    background-size: 100% 200px;
     color: #eb0000;
     -webkit-text-fill-color: transparent;
+    -webkit-animation: gradient-red 2.5s linear infinite;
+    animation: gradient-red 2.5s linear infinite;
+}
+@-webkit-keyframes gradient-red {
+    to {
+        background-position: 100% -200px;
+    }
+}
+@keyframes gradient-red {
+    to {
+        background-position: 100% -200px;
+    }
 }
 .text:before {
     top: 1px;
@@ -62,7 +75,20 @@ p {
     background: linear-gradient(rgb(0, 15, 36), rgb(255, 255, 255) 10%, rgb(55, 58, 59) 18%, rgb(55, 58, 59) 25%, rgb(200, 200, 200) 50%, rgb(55, 58, 59) 75%, rgb(25, 20, 31) 80%, rgb(240, 240, 240) 85%, rgb(166, 175, 194) 90%, rgb(50, 50, 50));
     -webkit-background-clip: text;
     background-clip: text;
+    background-size: 100% 200px;
     -webkit-text-stroke-width: 16px;
+    -webkit-animation: gradient-silver 2s linear infinite;
+    animation: gradient-silver 2s linear infinite;
+}
+@-webkit-keyframes gradient-silver {
+    to {
+        background-position: 100% -200px;
+    }
+}
+@keyframes gradient-silver {
+    to {
+        background-position: 100% -200px;
+    }
 }
 .text p:before {
     top: -1px;
@@ -79,7 +105,20 @@ p {
     background: linear-gradient(rgb(253, 241, 0), rgb(245, 253, 187) 25%, rgb(255, 255, 255) 40%, rgb(253, 219, 9) 75%, rgb(127, 53, 0) 90%, rgb(243, 196, 11));
     -webkit-background-clip: text;
     background-clip: text;
+    background-size: 100% 200px;
     -webkit-text-stroke-width: 10px;
+    -webkit-animation: gradient-yellow 4s linear infinite;
+    animation: gradient-yellow 4s linear infinite;
+}
+@-webkit-keyframes gradient-yellow {
+    to {
+        background-position: 100% -200px;
+    }
+}
+@keyframes gradient-yellow {
+    to {
+        background-position: 100% -200px;
+    }
 }
 .text p > span:before {
     top: -1px;
